@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/mooke2/catkin_workspace/src/darknet_ros/darknet/devel -DCMAKE_INSTALL_PREFIX=/home/mooke2/catkin_workspace/src/darknet_ros/darknet/install -G Unix Makefiles
