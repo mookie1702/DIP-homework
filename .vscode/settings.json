@@ -3,5 +3,12 @@
         "/home/mooke2/dashgo_ws/devel/lib/python2.7/dist-packages",
         "/home/mooke2/catkin_workspace/devel/lib/python2.7/dist-packages",
         "/opt/ros/kinetic/lib/python2.7/dist-packages"
-    ]
+    ],
+    "files.associations": {
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp"
+    }
 }

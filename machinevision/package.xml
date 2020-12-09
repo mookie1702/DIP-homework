@@ -1,10 +1,10 @@
 <package>
-  <name>mechinevision</name>
+  <name>machinevision</name>
   <version>0.0.0</version>
   <description>The package is build for my DIP work.</description>
   <author>Mookie</author>
   <maintainer email="mookie1702@gmail.com">Mookie</maintainer>
-  <license>BSD</license>
+  <license>BSD3.0</license>
 
   <build_depend>cv_bridge</build_depend>
   <build_depend>image_transport</build_depend>

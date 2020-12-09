@@ -1,3 +1,12 @@
+/*****************
+ *  node name: machinevision
+ *  subscribe topic name: 1. "/darknet_ros/bounding_boxes"：机器学习结果
+ *                        2. "/zed/zed_node/depth/depth_registered"：深度图像信息
+ *  publish topic name:  "/mechinespeed"
+ *  The function of the node:
+ *    结合机器学习结果与深度图像信息，通过逻辑判断输出小车控制信息。
+*/
+
 #include <ros/ros.h>
 #include <stdlib.h>
 #include <geometry_msgs/Twist.h>
@@ -29,11 +38,11 @@ using namespace message_filters;
 
 class SubscribeAndPublish{
 public:
-  ros::NodeHandle n;        // 设置ROS句柄
-  ros::Publisher speed_pub;
+  ros::NodeHandle n;  // 设置ROS句柄
+  ros::Publisher speed_pub; // 定义小车控制信息发布话题
   SubscribeAndPublish(){
     ros::Rate loop_rate(100); // 定义速度发布频率
-    speed_pub = n.advertise<geometry_msgs::Twist>("/mechinespeed", 5); // 定义速度发布器
+    speed_pub = n.advertise<geometry_msgs::Twist>("/machinespeed", 5); // 定义速度发布器
     // speed_pub = n.advertise<geometry_msgs::Twist>("/smoother_cmd_vel", 5); // 定义速度发布器
     message_filters::Subscriber<darknet_ros_msgs::BoundingBoxes> object_sub(n, "/darknet_ros/bounding_boxes", 1); // 定义方框信息接收器
     message_filters::Subscriber<sensor_msgs::Image> depth_sub(n, "/zed/zed_node/depth/depth_registered", 1);      // 定义ZED深度摄像头信息接收器
@@ -53,12 +62,10 @@ public:
       x = ((detect_msg->bounding_boxes[i].xmax - detect_msg->bounding_boxes[i].xmin) / 2) + detect_msg->bounding_boxes[i].xmin;
       y = ((detect_msg->bounding_boxes[i].ymax - detect_msg->bounding_boxes[i].ymin) / 2) + detect_msg->bounding_boxes[i].ymin;
       centerIdx = x + msg->width * y;
-      if (centerIdx < 0){
+      if (centerIdx < 0)
         centerIdx = 0;
-      }
-      else if (centerIdx > sizes/4){
+      else if (centerIdx > sizes/4)
         centerIdx = sizes / 4;
-      }
     }
     geometry_msgs::Twist cmd_red;
     cmd_red.linear.y = 1;
@@ -130,7 +137,7 @@ public:
 
 int main(int argc, char **argv){
   ROS_WARN("*****START*****");
-  ros::init(argc, argv, "mechinevision");
+  ros::init(argc, argv, "machinevision");
   SubscribeAndPublish sub_and_pub;
   return 0;
 }

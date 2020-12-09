@@ -1,41 +1,46 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/home/mooke2/dashgo_ws/devel/include/**",
-        "/home/mooke2/catkin_workspace/devel/include/**",
-        "/opt/ros/kinetic/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/amcl/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/astra/ros_astra_camera-filterlibrary/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/base_local_planner/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/carrot_planner/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/clear_costmap_recovery/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/costmap_2d/include/**",
-        "/home/mooke2/catkin_workspace/src/darknet_ros/darknet_ros/include/**",
-        "/home/mooke2/catkin_workspace/src/H_detector/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/dwa_local_planner/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/global_planner/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/ltme01_driver-1.0.1/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/map_server/include/**",
-        "/home/mooke2/catkin_workspace/src/image_test/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/move_base/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/move_slow_and_clear/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/nav_core/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/navfn/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/robot_pose_ekf/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/rotate_recovery/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/teb_local_planner/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/traffic/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/voxel_grid/include/**",
-        "/home/mooke2/dashgo_ws/src/dashgo/yocs_velocity_smoother/include/**",
-        "/home/mooke2/catkin_workspace/src/zed-ros-wrapper-3.2.x/zed_interfaces/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS"
-    }
-  ]
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/mooke2/dashgo_ws/devel/include/**",
+                "/home/mooke2/catkin_workspace/devel/include/**",
+                "/opt/ros/kinetic/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/amcl/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/astra/ros_astra_camera-filterlibrary/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/base_local_planner/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/carrot_planner/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/clear_costmap_recovery/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/costmap_2d/include/**",
+                "/home/mooke2/catkin_workspace/src/darknet_ros/darknet_ros/include/**",
+                "/home/mooke2/catkin_workspace/src/H_detector/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/dwa_local_planner/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/global_planner/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/ltme01_driver-1.0.1/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/map_server/include/**",
+                "/home/mooke2/catkin_workspace/src/image_test/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/move_base/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/move_slow_and_clear/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/nav_core/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/navfn/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/robot_pose_ekf/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/rotate_recovery/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/teb_local_planner/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/traffic/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/navigation-kinetic-devel/voxel_grid/include/**",
+                "/home/mooke2/dashgo_ws/src/dashgo/yocs_velocity_smoother/include/**",
+                "/home/mooke2/catkin_workspace/src/zed-ros-wrapper-3.2.x/zed_interfaces/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
 }
